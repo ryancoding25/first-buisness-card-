@@ -1,0 +1,104 @@
+body {
+    margin: 20px auto;
+    font-family: Times New Roman
+}
+
+.avatar {
+    width: 150px;
+    display:cover;
+    border: 1px solid blueviolet
+}
+
+.avatar:hover{ 
+ border: 2px solid blueviolet;
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;   
+}
+
+
+ .avatar {
+            height: 100px;
+            width: 100px;
+            margin: 0 auto;
+            background-color: lime;
+            animation-name: stretch;
+            animation-duration: 2.0s;
+            animation-timing-function: ease-out;
+            animation-direction: alternate;
+            animation-iteration-count: 5s ;
+            animation-play-state: running;
+        }
+  
+        @keyframes stretch {
+            0% {
+                transform: scale(.5);
+                background-color: green;
+                border-radius: 100%;
+            }
+  
+            50% {
+                background-color: orange;
+            }
+  
+            100% {
+                transform: scale(2.0);
+                background-color: red;
+            }
+        }
+
+
+.card {
+    width: 450px;
+    margin: 0 auto;
+    padding:50px;
+    display: flex;
+    justify-content:even space-between;
+    text-align: center;
+    text-shadow: 2px 4px blueviolet;
+    cursor: pointer;
+    background: #D64933;
+    color: #050609;
+    border-right: dotted 8px blue;
+    border-top: double 8px blue;
+    border-bottom: double 8px blue;
+    border-left: dotted 8px blue;
+    border-radius: 10px;
+}
+    
+.phone{
+    animation: hithere 1s ease ;
+}
+@keyframes hithere {
+  30% { transform: scale(1.2); }
+  40%, 60% { transform: rotate(-20deg) scale(1.2); }
+  50% { transform: rotate(20deg) scale(1.2); }
+  70% { transform: rotate(0deg) scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+    
+.coding{
+    text-decoration:underline 
+}  
+    
+
+
+
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+/*
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
